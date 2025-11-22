@@ -107,6 +107,8 @@ class SistemaCompleto {
     calcularImposto() { }
 }
 
+
+
 // CODE SMELL 6: Comentários excessivos compensando código ruim
 // Problema: Código precisa de muitos comentários para ser entendido
 function proc(d) {
