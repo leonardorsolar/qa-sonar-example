@@ -388,3 +388,37 @@ console.log("\nAtividade prática:");
 console.log("1. Identifique todos os code smells e sugira melhorias");
 console.log("2. Encontre os bugs e explique por que causam problemas");
 console.log("3. Liste as vulnerabilidades e proponha correções");
+
+
+// ===== EXEMPLO DE DUPLICAÇÃO DETECTÁVEL PELO SONAR =====
+
+// Função 1 (duplicada)
+function calcularTotalA(itens) {
+    let total = 0;
+    for (let i = 0; i < itens.length; i++) {
+        total += itens[i].preco * itens[i].quantidade;
+    }
+    return total;
+}
+
+// Função 2 (duplicada)
+function calcularTotalB(itens) {
+    let total = 0;
+    for (let i = 0; i < itens.length; i++) {
+        total += itens[i].preco * itens[i].quantidade;
+    }
+    return total;
+}
+
+function calcularTotalC(itens) {
+    let total = 0;
+    for (let i = 0; i < itens.length; i++) {
+        total += itens[i].preco * itens[i].quantidade;
+    }
+    return total;
+}
+
+// Função 3 (duplicada)
+calcularTotalA(itens) 
+calcularTotalB(itens)
+calcularTotalC(itens)
