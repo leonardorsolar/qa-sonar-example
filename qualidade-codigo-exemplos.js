@@ -94,6 +94,13 @@ function calcular(x, y, z) {
     return c;
 }
 
+function calcular(x, y, z) {
+    let a = x * y;
+    let b = a * z;
+    let c = b + 50;
+    return c;
+}
+
 // CODE SMELL 5: Classe Deus (God Class)
 // Problema: Classe faz muitas coisas não relacionadas
 class SistemaCompleto {
